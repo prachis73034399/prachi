@@ -1,0 +1,28 @@
+import java.io.*;
+class Stocks
+{
+
+   public static void main(String args[]) throws Exception
+  {
+     BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+          
+     System.out.println("Enter number of stocks:");
+     int no = Integer.parseInt(br.readLine());
+     Stocksport sp[]=new Stocksport[no];
+     for(int i=0; i<no; i++)
+       {
+         sp[i]= new Stocksport();
+       }
+   
+        System.out.println("Stock Report:");
+	System.out.println("name \t share \t price \t totalValue");
+	for(int i=0;i<no;i++)
+	{
+			sp[i].display();
+	}
+  }
+}
+
+
+ 
+
